@@ -1,0 +1,26 @@
+[alias]
+	lg = log --oneline --decorate --all --graph
+	s = status -s -b
+	cm = commit
+	feto = fetch origin	
+	rba = rebase --abort
+	rbc = rebase --continue
+	mod = merge origin/develop
+  	mom = merge origin/master
+	po = pull origin
+	pod = pull origin develop
+	pom = pull origin master
+	pu = push origin
+	pussy = push origin develop
+	pushy = push origin master
+	st = stash list
+	sts = stash save
+	sta = "!f() { git stash apply stash@{$@}; }; f"
+	std = "!f() { git stash drop stash@{$@}; }; f"
+	stc = stash clear
+	co = checkout
+	cod = checkout develop
+	com = checkout master
+	cob = checkout -b
+	cobd = checkout -b develop
+	ba = branch -a
