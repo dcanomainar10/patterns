@@ -18,9 +18,20 @@ Patrón que se centra en la creación de una clase fábrica la cual tiene métod
 
 Patrón muy similar al Factory Method, sin embargo, este patrón nos permite crear objetos de una determinada familia de clases.
 
+#### Cuándo utilizarlo
+
+* Cuando la creación directa de un objeto por medio del operador new puede ser perjudicial.
+* Cuando no se conoce en tiempo de diseño la familia de clases que se utilizará en ejecución.
+* Cuando es necesario construir diferentes implementaciones para solucionar una misma problemática.
+
 ### Patrón Singelton
 
 Patrón utilizado para controlar la creación de una clase determinada, de esta forma sólo se puede crear una única instancia en toda la aplicación.
+
+#### Cuando utilizarlo
+
+* Cuando la creación de objetos por medio del operador new es perjudicial.
+* Cuando tener más de una instancia es perjudicial.
 
 ### Patrón Builder
 
@@ -40,7 +51,13 @@ Son patrones de diseño que tienen que ver con la forma en que las clases se rel
 
 ### Patrón Adapter
 
-Resuelve escenarios donde existen interfaces incompatibles creando adaptadores que nos ayuden a comunicarnos con las interfaces de una forma genérica
+Resuelve escenarios donde existen interfaces incompatibles creando adaptadores que nos ayuden a comunicarnos con las interfaces de una forma genérica.
+
+#### Cuando utilizarlo
+
+* Cuando buscamos homogeneizar la forma de trabajar con interfaces incompatibles mediante una interfaz en común.
+
+* Cuando las interfaces del sistema viejo no se ajusta al nuevo sistema.
 
 ### Patrón Bridge
 
@@ -50,6 +67,11 @@ Patrón utilizado para desacoplar una abstracción de su implementación permiti
 
 Patrón de diseño que nos permite la creación de estructuras de objetos complejas mediante la agregación.
 
+#### Cuando utilizarlo
+
+* Cuando detectemos estructuras complejas que podrían dividirse en elementos más pequeños, los cuáles están muy relacionados entre sí tanto en funcionamiento como en estructura.
+* Se busca eliminar la diferencia entre un objeto simple y uno compuesto.
+
 ### Patrón Decorator
 
 Patrón de diseño utilizado para agregar funcionalidad a un objeto mediante la asociación de otros objetos. Este patrón nos evita la creación de clases que hereden de la primera incorporando la nueva funcionalidad, sino otras que la implementan y se asocian a la primera.
@@ -58,6 +80,11 @@ Patrón de diseño utilizado para agregar funcionalidad a un objeto mediante la 
 
 Mediante la implementación de este patrón, se pueden crear fachadas que permitan ocultar la complejidad de interactuar con un conjunto de subsistemas, mediante la implementación de interfaces de alto nivel las cuales se encarguen de realizar la comunicación con todos los subsistemas. 
 
+#### Cuando utilizarlo
+
+* Cuando interactuar con un conjunto de subsistemas es complicado, debido a que es necesario conocer los objetos necesarios para tener una interacción con cada sistema.
+* Cuando queremos construir interfaces de alto nivel para nuestros usuarios.
+
 ### Patrón Flyweight
 
 Patrón enfocado a la creación de objetos ligeros. Los objetos ligeros se logran mediante la abstracción de partes reutilizables que son compartidos por otros objetos en vez de crear nuevos cada vez que son requeridos.
@@ -65,6 +92,12 @@ Patrón enfocado a la creación de objetos ligeros. Los objetos ligeros se logra
 ### Patrón Proxy
 
 Patrón de diseño utilizado para la mediación entre un objeto y otro. Se conoce como mediación a las acciones que se pueden hacer antes y después de realizar la acción solicitada.
+
+#### Cuando utilizarlo
+
+* Cuando lo que buscamos es controlar la forma en que se ejecuta un objeto sin afectar al consumidor, agregando acciones previas y posteriores a la ejecución de la operación solicitada.
+* Cuando queremos representar objetos remotos de forma local, creando un proxy que permite establecer la comunicación con el objeto remoto.
+* Virtualizar un objeto real, el cual represente a un objeto de gran tamaño o que su creación sea costosa. Este proxy carga al objeto real justo en el momento en que es requerido y no desde un inicio.
 
 ## Patrones de Comportamiento
 
@@ -78,9 +111,19 @@ Nos permite recorrer estructuras de datos ya sean simples o complejas sin conoce
 
 Patrón que nos permite ejecutar operaciones sin saber exactamente que clase atenderá nuestra petición. Mediante los comandos podemos encapsular la lógica de ejecución, de tal manera que el cliente sólo sepa de la existencia del comando y los parámetros necesarios para su ejecución.
 
+#### Cuando utilizarlo
+
+* Cuando es necesario encapsular los detalles de ejecución de una serie de operaciones bajo una única interface.
+* Cuando es necesario ejecutar operaciones sin conocer los detalles de implementación, proporcionando un único método de ejecución.
+
 ### Patrón Observer
 
 Patrón de diseño utilizado para observar los cambios o eventos generados por otros objetos con la finalidad de realizar acciones en consecuencia de algún cambio sobre nuestro objeto observado.
+
+#### Cuando utilizarlo
+
+* Cuando requieres que una serie de objetos conozcan los cambios realizados por otro objeto.
+* Cuando se requiere desacoplar el objeto analizado de los interesados, permitiendo la variación de ambas partes.
 
 ### Patrón Templete Method
 
@@ -89,6 +132,11 @@ Patrón de diseño enfocado en la reutilización de código, mediante la creaci�
 ### Patrón Strategy
 
 Permite mediante la implementación de estrategias el intercambio de responsabilidad. Las estrategias son clases que definen un comportamiento a la clase que las contienen y mediante este intercambio de estrategias es como se logra alterar el comportamiento de las clases en tiempo de ejecución.
+
+#### Cuando utilizarlo
+
+* Cuando se requiere que el comportamiento de una clase pueda variar según el estado de la aplicación o simplemente por configuración.
+* Cuando un conjunto de clases se diferencia únicamente por su comportamiento. El comportamiento se podría extraer en una estrategia para después ser establecida según las circunstancias.
 
 ### Patrón Chain of Responsability
 
