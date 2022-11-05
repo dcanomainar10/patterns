@@ -8,21 +8,9 @@ Son patrones de diseño relacionados con la creación o construcción de objetos
 
 Patrón que se centra en la creación de una clase fábrica la cual tiene métodos que nos permitan crear objetos de un subtipo determinado.
 
-#### Cuando utilizarlo
-
-* Cuando la creación directa de un objeto por medio del operador new pueda ser perjudicial.
-* Cuando no se conoce en tiempo de diseño la subclase que se utilizará.
-* Cuando construimos un objeto basado en una serie de condiciones else if o switch.
-
 ### Patrón Abstract Factory
 
 Patrón muy similar al Factory Method, sin embargo, este patrón nos permite crear objetos de una determinada familia de clases.
-
-#### Cuándo utilizarlo
-
-* Cuando la creación directa de un objeto por medio del operador new puede ser perjudicial.
-* Cuando no se conoce en tiempo de diseño la familia de clases que se utilizará en ejecución.
-* Cuando es necesario construir diferentes implementaciones para solucionar una misma problemática.
 
 ### Patrón Singelton
 
