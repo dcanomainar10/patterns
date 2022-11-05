@@ -7,7 +7,7 @@
 * Cuando es necesario controlar la creación de objetos por medio de una interface común.
 * Cuando construimos un objeto basado en una serie de condiciones else if o switch.
 
-## Componentes de Factory Method:
+## Componentes de Factory Method
 
 * IProduct: Representa de forma abstracta el objeto que queremos crear, mediante esta interface se definen la estructura que tendrá el objeto creado.
 * ConcreteProduct: Representa una implementación concreta de la interface *IProduct*, la cual es creada a través del *ConcreteFactory*.
@@ -24,11 +24,7 @@
     <td><img src="Resources/FactoryMethodFlow.png"></td>
   </tr>
  </table>
-
-
-
-
-## Interpretación Diagrama de secuencia:
+## Interpretación Diagrama de secuencia
 
 1. El cliente le solicita al *ConcreteFactory* la creación del *ProductA*.
 2. El *ConcreteFactory* localiza la implementación concreta de *ProductA* y crea una nueva instancia.
@@ -44,7 +40,6 @@ Deseamos tener la opción de conectarnos a dos bases de datos distintas (Oracle 
 ## Solución
 
 <img src="Resources/ImplementationFactoryMethod.png">
-
 
 * **DBFactory.properties**: Archivo de propiedades para determinar la clase a fábrica.
 
@@ -109,3 +104,18 @@ Deseamos tener la opción de conectarnos a dos bases de datos distintas (Oracle 
 * **PropertiesUtil**: Clase utilizada como clase de utilidad que define únicamente el método loadProperty, el cuál lee un archivo de propiedades determinado y lo carga en un objeto de tipo Properties. La URL del archivo a cargar es pasada como parámetro.
 
 * **Clase FactoryMain**: Nos permite ejecutar la aplicación.
+
+  ```c#
+  public static void Main() {
+  	var productA = new Product(1, "Product A", 100);
+  	var productB = new Product(2, "Product B", 100);
+      
+      var productDAO = new ProductDAO();
+      
+      productDAO.saveProduct(productA);
+      productDAO.saveProduct(productB);
+      
+      var products = productDAO.findAllProducts();
+      Console.Write(products);
+  }
+  ```
