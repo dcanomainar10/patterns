@@ -20,10 +20,11 @@
      <td style="text-align:center; font-weight:bold; font-size:20px">Diagrama de Secuencia</td>
   </tr>
   <tr style="text-align:center;">
-    <td><img src="FactoryMethodStructure.png" style="width: 100%"></td>
-    <td><img src="FactoryMethodFlow.png" style="width: 100%"></td>
+    <td><img src="FactoryMethodStructure.png"></td>
+    <td><img src="FactoryMethodFlow.png"></td>
   </tr>
  </table>
+
 
 
 
@@ -42,9 +43,8 @@ Deseamos tener la opción de conectarnos a dos bases de datos distintas (Oracle 
 
 ## Solución
 
-<div style="text-align: center">
 <img src="ImplementationFactoryMethod.png">
-</div>
+
 
 * **DBFactory.properties**: Archivo de propiedades para determinar la clase a fábrica.
 
