@@ -42,7 +42,9 @@ Deseamos tener la opción de conectarnos a dos bases de datos distintas (Oracle 
 
 ## Solución
 
+<div style="text-align: center">
 <img src="ImplementationFactoryMethod.png">
+</div>
 
 * **DBFactory.properties**: Archivo de propiedades para determinar la clase a fábrica.
 
