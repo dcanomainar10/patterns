@@ -24,6 +24,7 @@
     <td><img src="Resources/FactoryMethodFlow.png"></td>
   </tr>
  </table>
+
 ## Interpretación Diagrama de secuencia
 
 1. El cliente le solicita al *ConcreteFactory* la creación del *ProductA*.
