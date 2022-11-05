@@ -2,7 +2,7 @@
 
 ## Cuando utilizarlo
 
-## Componentes de Abstract Factory:
+## Componentes de Builder:
 
 ## Interpretación Diagrama de secuencia:
 

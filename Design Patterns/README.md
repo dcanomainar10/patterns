@@ -16,11 +16,6 @@ Patrón muy similar al Factory Method, sin embargo, este patrón nos permite cre
 
 Patrón utilizado para controlar la creación de una clase determinada, de esta forma sólo se puede crear una única instancia en toda la aplicación.
 
-#### Cuando utilizarlo
-
-* Cuando la creación de objetos por medio del operador new es perjudicial.
-* Cuando tener más de una instancia es perjudicial.
-
 ### Patrón Builder
 
 Patrón que permite la creación de objetos complejos desde un objeto Builder. El objeto Builder se compone de una variedad de partes que contribuyen individualmente a la creación del objeto.
@@ -40,12 +35,6 @@ Son patrones de diseño que tienen que ver con la forma en que las clases se rel
 ### Patrón Adapter
 
 Resuelve escenarios donde existen interfaces incompatibles creando adaptadores que nos ayuden a comunicarnos con las interfaces de una forma genérica.
-
-#### Cuando utilizarlo
-
-* Cuando buscamos homogeneizar la forma de trabajar con interfaces incompatibles mediante una interfaz en común.
-
-* Cuando las interfaces del sistema viejo no se ajusta al nuevo sistema.
 
 ### Patrón Bridge
 
@@ -107,11 +96,6 @@ Patrón que nos permite ejecutar operaciones sin saber exactamente que clase ate
 ### Patrón Observer
 
 Patrón de diseño utilizado para observar los cambios o eventos generados por otros objetos con la finalidad de realizar acciones en consecuencia de algún cambio sobre nuestro objeto observado.
-
-#### Cuando utilizarlo
-
-* Cuando requieres que una serie de objetos conozcan los cambios realizados por otro objeto.
-* Cuando se requiere desacoplar el objeto analizado de los interesados, permitiendo la variación de ambas partes.
 
 ### Patrón Templete Method
 
