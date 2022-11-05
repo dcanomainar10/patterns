@@ -19,11 +19,13 @@
     <td style="text-align:center; font-weight:bold; font-size:20px">Estructura de Clases</td>
      <td style="text-align:center; font-weight:bold; font-size:20px">Diagrama de Secuencia</td>
   </tr>
-  <tr>
-    <td><img src="FactoryMethodStructure.svg" width=600 height=580></td>
-    <td><img src="FactoryMethodFlow.svg" width=600 height=500></td>
+  <tr style="text-align:center;">
+    <td><img src="FactoryMethodStructure.png" style="width: 100%"></td>
+    <td><img src="FactoryMethodFlow.png" style="width: 100%"></td>
   </tr>
  </table>
+
+
 
 ## Interpretación Diagrama de secuencia:
 
@@ -40,7 +42,7 @@ Deseamos tener la opción de conectarnos a dos bases de datos distintas (Oracle 
 
 ## Solución
 
-<img src="ImplementationFactoryMethod.svg">
+<img src="ImplementationFactoryMethod.png">
 
 * **DBFactory.properties**: Archivo de propiedades para determinar la clase a fábrica.
 
