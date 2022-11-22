@@ -213,5 +213,9 @@ Parameters:
 
 <Pending>
 
+## Undo last local commit
+
+* git reset --soft HEAD~1
+
 ## Documentation
 

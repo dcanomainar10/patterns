@@ -1,3 +1,7 @@
+[includeIf "gitdir:C:/Personal/"]
+  path = ~/.gitconfig-personal
+[includeIf "gitdir:C:/Work/"]
+  	path = .gitconfig-work
 [core]
 	autocrlf = false
 [user]
